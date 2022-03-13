@@ -1,0 +1,24 @@
+
+.container__form {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 90%;
+  gap: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item__form > * {
+  display: block;
+}
+.item__form input, 
+.item__form select {
+  width: 100%;
+  height: 25px;
+}
+.item__form button {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(192, 92, 92);
+  color: black;
+}

@@ -1,0 +1,29 @@
+.modal{
+  position: fixed;
+  background-color: rgba(17, 17, 17, 0.335);
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal.open{
+  display: flex;
+}
+.modal-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 5px;
+  width: 578px;
+  height: 240px;
+}
+.modal-close{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}

@@ -1,0 +1,21 @@
+.container__dashboard {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+.item__dashboard__sidebar {
+  width: 20%;
+}
+.item__dashboard__main {
+  width: 80%;
+}
+.tools_dashboard {
+  margin-top: 36px;
+}
+.main__dashboard {
+  margin-top: 20px;
+}
