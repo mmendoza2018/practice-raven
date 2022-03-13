@@ -8,4 +8,4 @@
  -petición GET implementada.
  -peticion POST PUT (error CORS no solventado).
 
-**interfaz solo disponible para versiones en  escritorio **
+**interfaz solo disponible para versiones en  escritorio**
