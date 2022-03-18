@@ -7,5 +7,9 @@
  -se uso utlidades (funciones reutilizables).
  -petición GET implementada.
  -peticion POST PUT (error CORS no solventado).
+ 
+**UPDATE 18/03/2022**
+ -peticion POST implementada.
+ -peticion DELETE implementada.
 
 **interfaz solo disponible para versiones en  escritorio**
