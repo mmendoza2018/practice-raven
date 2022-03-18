@@ -13,7 +13,6 @@ const Modal = ({children,openModal,closeModal,isOpen}) => {
         {children}
     </div>
     </div>
-      {/* <button onClick={openModal}>Abrir</button> */}
     </div>
   )
 }

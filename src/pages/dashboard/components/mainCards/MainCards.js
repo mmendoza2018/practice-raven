@@ -1,23 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Card from "../card/Card";
 import "./mainCards.css";
-import helpPetition from "../../../../utils/helpPetition";
 
-const MainCards = ({openModal1}) => {
-  const [dataCards, setDataCards] = useState([]);
-  let { get } = helpPetition();
-
-  useEffect(() => {
-    let respuesta = get("https://syn-api-prod.herokuapp.com/tasks").then(
-      (res) => {
-        if (!res.error) {
-          setDataCards(res);
-        } else {
-          console.log("eror");
-        }
-      }
-    );
-  }, []);
+const MainCards = ({openModal1,dataCards,deleteCards}) => {
+  
   return (
     <div className="container__main__cards">
       <div className="item__main__card">
@@ -27,11 +13,13 @@ const MainCards = ({openModal1}) => {
             return (
               <Card
                 key={card.id}
+                id={card.id}
                 title={card.name}
                 points={card.pointEstimate}
                 date={card.createdAt}
                 tags={card.tags}
                 openModal1 ={openModal1}
+                deleteCards ={deleteCards}
               />
             );
         })}
@@ -43,11 +31,13 @@ const MainCards = ({openModal1}) => {
             return (
               <Card
                 key={card.id}
+                id={card.id}
                 title={card.name}
                 points={card.pointEstimate}
                 date={card.createdAt}
                 tags={card.tags}
                 openModal1 ={openModal1}
+                deleteCards ={deleteCards}
               />
             );
         })}
@@ -59,11 +49,13 @@ const MainCards = ({openModal1}) => {
             return (
               <Card
                 key={card.id}
+                id={card.id}
                 title={card.name}
                 points={card.pointEstimate}
                 date={card.createdAt}
                 tags={card.tags}
                 openModal1 ={openModal1}
+                deleteCards ={deleteCards}
               />
             );
         })}

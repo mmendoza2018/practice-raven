@@ -9,7 +9,7 @@ import edit from "../../../../image/edit.svg";
 import deleted from "../../../../image/deleted.svg";
 import formatDate from "../../../../utils/formatDate";
 
-const Card = ({title, points,date ,tags,openModal1 }) => {
+const Card = ({title, points,date ,tags, id, openModal1, deleteCards }) => {
   //6 JULY 2020
   let newDate = formatDate(date);
   return (
@@ -23,7 +23,12 @@ const Card = ({title, points,date ,tags,openModal1 }) => {
         <div className='dropdown__content__Card'>
          <div className='flex__content__card'>
           <div className='item__dropdown' onClick={openModal1}> <span> <img src={edit}  className="img__dropdown" alt="img" /> </span> Edit</div>
-          <div className='item__dropdown'> <span> <img src={deleted} className="img__dropdown" alt="img" /> </span> Delete</div>
+          <div className='item__dropdown' onClick={(e) => { deleteCards(`https://syn-api-prod.herokuapp.com/tasks/${id}`)}}> 
+            <span> 
+              <img src={deleted} className="img__dropdown" alt="img" />
+            </span> 
+            Delete
+          </div>
          </div>
         </div>
       </div>
