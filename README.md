@@ -10,6 +10,8 @@
  \
 **UPDATE 18/03/2022**\
  -peticion POST implementada.\
- -peticion DELETE implementada.\
+ -peticion DELETE implementada.
 
 **interfaz solo disponible para versiones en  escritorio**
+![image](https://user-images.githubusercontent.com/70293539/159070943-79a3bde6-89bc-4428-b064-4ef4c5f0f4ce.png)
+
